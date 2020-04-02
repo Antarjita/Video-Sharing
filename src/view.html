@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WatchMore</title>
+        <link rel="stylesheet" type="text/css" href="CSS-styles.css">
+    </head>
+    <body id="body">
+        
+        <div class="outer">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">HOME</a>
+                <a href="#">CREATE</a>
+                <a href="#">TRENDING</a>
+                <a href="#">SUBSCRIPTION</a>
+                <a href="#">ABOUT</a>
+            </div>
+            <span style="font-size:25px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <img src="rsc/picture/logo.png" alt="logo" width="40px" height="40px">
+            <b style="font-size: 20px;color: white;font-family: fantasy;">Watch More.Feel More.Create More.</b>
+            <br><br>
+            <hr style="width:1300px">
+            
+        </div>
+        
+
+        
+        <div class="search">
+            <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search" size="50" style="height:35px">
+                    <input type="image" src="rsc/picture/search.png" width="35px" height="35px" >
+            </form>
+            <br><br>
+        </div>
+        <div class="theme">
+            <b id="h">Video Name:__________</b>
+        </div>
+        
+        <div id="play">
+            <video width="850px" height="550px" controls>
+                <source src="rsc/video/v2.mp4" type="video/mp4">
+                <source src="rsc/vedio/v2.ogg" type="video/ogg">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <div id="d1">
+            <b>Description:________</b>
+        </div>
+        
+       
+        
+        
+
+       
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body>
+</html>
