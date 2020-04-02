@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WatchMore</title>
+        <link rel="stylesheet" type="text/css" href="CSS-styles.css">
+    </head>
+    <body id="body">
+        
+        <div class="outer">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">HOME</a>
+                <a href="#">CREATE</a>
+                <a href="#">PLAY LISTS</a>
+                <a href="#">ANALYISIS</a>
+                <a href="#">SUBSCRIPTIONS</a>
+                <a href="#">ABOUT</a>
+            </div>
+            <span style="font-size:25px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <img src="rsc/picture/logo.png" alt="logo" width="40px" height="40px">
+            <b style="font-size: 20px;color: white;font-family: fantasy;">Watch More.Feel More.Create More.</b>
+            <br><br>
+            <hr style="width:1300px">
+            
+        </div>
+        <button id="create" onclick="location.href='http://www.example.com'">CREATE</button>
+
+        
+        <div class="search">
+            <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search" size="50" style="height:35px">
+                    <input type="image" src="rsc/picture/search.png" width="35px" height="35px" >
+            </form>
+            <br><br>
+        </div>
+        <div class="theme">
+            <b>Themes</b>
+        </div>
+        <div class="t1">
+            <div class="row">
+                <div class="column">
+                    <form action="/nature.php">
+                        <input type="image" src="rsc/picture/nature.jpg" width="250px" height="250px" >
+                    </form>
+                    <b style="color:white; ">NATURE</b>
+                   
+                  <!--<img src="nature.jpg" alt="Snow" style="width: 250px;height: 250px;">-->
+                </div>
+                <div class="column">
+                    <form action="/history.php">
+                        <input type="image" src="rsc/picture/history.jpeg" width="250px" height="250px" >
+                    </form>
+                    <b style="color:white; ">HISTORY</b>    
+
+                    <!--<img src="history.jpeg" alt="Forest" style="width: 250px;height: 250px;">-->
+                </div>
+                <div class="column">
+                    <form action="/party.php">
+                        <input type="image" src="rsc/picture/party.jpg" width="250px" height="250px" >
+                    </form>
+                    <b style="color:white; ">PARTY</b>
+                  <!--<img src="party.jpg" alt="Forest" style="width: 250px;height: 250px;" >-->
+                </div>
+                <div class="column">
+                    <form action="/documentary.php">
+                        <input type="image" src="rsc/picture/documentary.jpg" width="250px" height="250px" >
+                    </form>
+                    <b style="color:white; ">DOCUMENTARY</b>
+                    
+                  <!--<img src="documentary.jpg" alt="Mountains" style="width: 250px;height: 250px;">-->
+                </div>
+              </div>
+        </div>
+        
+        <b class="trends">TRENDING</b>
+
+        <div class="t2">
+            <div class="row">
+                <div class="column">
+                    <video width="250px" height="250px" controls>
+                        <source src="rsc/video/v1.mp4" type="video/mp4">
+                        <source src="rsc/vedio/v1.ogg" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+                   
+                  <!--<img src="nature.jpg" alt="Snow" style="width: 250px;height: 250px;">-->
+                </div>
+                <div class="column">
+                    <video width="250px" height="250px" controls>
+                        <source src="rsc/video/v2.mp4" type="video/mp4">
+                        <source src="rsc/video/v2.ogg" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                    <!--<img src="history.jpeg" alt="Forest" style="width: 250px;height: 250px;">-->
+                </div>
+                <div class="column">
+                    <video width="250px" height="250px" controls>
+                        <source src="rsc/video/v3.mp4" type="video/mp4">
+                        <source src="rsc/video/v3.ogg" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+                  <!--<img src="party.jpg" alt="Forest" style="width: 250px;height: 250px;" >-->
+                </div>
+                <div class="column">
+                    <video width="250px" height="250px" controls>
+                        <source src="rsc/video/v4.mp4" type="video/mp4">
+                        <source src="rsc/video/v4.ogg" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    
+                  <!--<img src="documentary.jpg" alt="Mountains" style="width: 250px;height: 250px;">-->
+                </div>
+              </div>
+        </div>
+
+       
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+
+        </script>
+    </body>
+</html>
