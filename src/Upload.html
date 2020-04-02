@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WatchMore</title>
+        <link rel="stylesheet" type="text/css" href="CSS-styles.css">
+    </head>
+    <body id="body">
+        
+        <div class="outer">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">HOME</a>
+                <a href="#">ANALYSIS</a>
+                <a href="#">TRENDING</a>
+                <a href="#">SUBSCRIPTION</a>
+                <a href="#">ABOUT</a>
+            </div>
+            <span style="font-size:25px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <img src="picture/logo.png" alt="logo" width="40px" height="40px">
+            <b style="font-size: 20px;color: white;font-family: fantasy;">Watch More.Feel More.Create More.</b>
+            <br><br>
+            <hr style="width:1300px">
+            
+        </div>
+        <button id="create" onclick='alert("Successfully uploaded")'>+UPLOAD</button>
+
+        
+        
+        <div id="buttons_div">
+            <form id='formid' action="upload.php" method="POST" enctype="multipart/form-data"> 
+                <input type="file" id="inputfile" name='file'/>
+            </form>
+        </div>
+        
+        <div >
+            <b id="hdesc">DESCRIPTION</b>
+            <textarea rows="10" cols="50" id="desc"></textarea>
+        </div>
+        
+
+       
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+
+
+            /*To upload a file*/
+            var control = document.getElementById("inputfile");    
+            control.addEventListener("change", function(event){    
+                var reader = new FileReader();   
+                console.log(reader);     
+                reader.onload = function(event){
+                    var contents = event.target.result;     
+                    console.log(contents);     
+                        document.getElementById('putcontentshere').value = contents;            
+                };        
+                reader.onerror = function(event){
+                    console.error("File could not be read! Code " + event.target.error.code);
+                };        
+                console.log("Filename: " + control.files[0].name);
+                
+                reader.readAsText(control.files[0]);    
+                  
+            }, false);
+        </script>
+    </body>
+</html>
