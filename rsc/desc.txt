@@ -1,0 +1,1 @@
+Contains all the resources like pictures and videos which are needed the html page
